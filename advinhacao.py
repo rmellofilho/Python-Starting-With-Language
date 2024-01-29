@@ -4,3 +4,5 @@ print("===============================")
 
 
 numero_secreto = 42
+
+chute_str = input("Digite o seu número: ")
