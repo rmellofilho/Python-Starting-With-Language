@@ -31,6 +31,6 @@ for rodada in range(1, total_de_tentativas + 1):
         chute
         print("Você errou!", "\nO seu chute foi", chute, "e ele é menor que o número secreto!", "\nTente novamente.")
 print("\n")
-print(numero_secreto)
+
 print("Fim de jogo!")
     
