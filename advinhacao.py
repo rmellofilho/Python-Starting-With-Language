@@ -1,9 +1,11 @@
+import random
+
 print("===============================")
 print("Bem vindo ao Jogo de Advinhação")
 print("===============================")
 
 
-numero_secreto = 42
+numero_secreto = round(random.randrange(1, 101))
 total_de_tentativas = 3
 
 
@@ -28,6 +30,7 @@ for rodada in range(1, total_de_tentativas + 1):
     elif(menor):
         chute
         print("Você errou!", "\nO seu chute foi", chute, "e ele é menor que o número secreto!", "\nTente novamente.")
-
-print("\nFim de jogo!")
+print("\n")
+print(numero_secreto)
+print("Fim de jogo!")
     
