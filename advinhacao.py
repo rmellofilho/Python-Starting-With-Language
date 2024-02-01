@@ -7,9 +7,9 @@ print("===============================")
 
 numero_secreto = round(random.randrange(1, 101))
 total_de_tentativas = 0
-nivel = int(input("Defina o nível: "))
+nivel = int(input("Defina o nível de 1 a 3: "))
 pontos = 100
-
+print(numero_secreto)
 
 if(nivel == 1):
     total_de_tentativas = 20
@@ -35,7 +35,7 @@ for rodada in range(1, total_de_tentativas + 1):
     menor   = chute < numero_secreto
 
     if (acertou):
-        print("Você acertou!", "\nO número secreto é o", chute, end="!")
+        print("Você acertou!", "\nVocê fechou com {0} pontos e o número secreto foi o {1}!".format(pontos, chute))
         break
     else:
         if(maior):  
