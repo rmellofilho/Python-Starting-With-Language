@@ -9,7 +9,13 @@ print("(1) Forca (2) Advinhação")
 
 jogo = int(input("Qual jogo? "))
 
-if(jogo == 1):
-    forca.jogar_forca()
-elif(jogo == 2):
-    advinhacao.jogar_advinhacao()
+
+def escolhe_jogo():
+    if(jogo == 1):
+        forca.jogar()
+    elif(jogo == 2):
+        advinhacao.jogar()
+
+
+if(__name__ == "__main__"):
+    escolhe_jogo()
